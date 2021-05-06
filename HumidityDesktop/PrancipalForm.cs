@@ -67,7 +67,15 @@ namespace HumidityDesktop
                            Date = rh.DateObservation
                        });
             datagridvHumidity.DataSource = rhs.ToList();
-        }
+            foreach (var ob in obser)
+            {
+                comboBoxObs.Items.Add(ob.ID + " " + ob.NomPrenom);
+            }
+            foreach (var st in sta)
+            {
+                comboBoxStat.Items.Add(st.ID + " " + st.NomStation);
+            }
+        } 
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
