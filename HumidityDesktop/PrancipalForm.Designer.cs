@@ -80,6 +80,10 @@ namespace HumidityDesktop
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -122,10 +126,6 @@ namespace HumidityDesktop
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties62 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties63 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties64 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -165,6 +165,9 @@ namespace HumidityDesktop
             this.BtnAjObs = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxNomObs = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.txtID = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.datePicker = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.comboBoxHeur = new System.Windows.Forms.ComboBox();
             this.datagridvHumidity = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.BtnSupprimer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.BtnModifier = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -188,9 +191,6 @@ namespace HumidityDesktop
             this.humidityCalculatorDataSet = new HumidityDesktop.HumidityCalculatorDataSet();
             this.observateurBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.observateurTableAdapter = new HumidityDesktop.HumidityCalculatorDataSetTableAdapters.ObservateurTableAdapter();
-            this.comboBoxHeur = new System.Windows.Forms.ComboBox();
-            this.datePicker = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.txtID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPages1.SuspendLayout();
@@ -2480,6 +2480,123 @@ namespace HumidityDesktop
             this.tabPage2.Text = "Humidite";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // txtID
+            // 
+            this.txtID.AcceptsReturn = false;
+            this.txtID.AcceptsTab = false;
+            this.txtID.AnimationSpeed = 200;
+            this.txtID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtID.BackColor = System.Drawing.Color.Transparent;
+            this.txtID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtID.BackgroundImage")));
+            this.txtID.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtID.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtID.BorderRadius = 1;
+            this.txtID.BorderThickness = 1;
+            this.txtID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtID.DefaultText = "";
+            this.txtID.FillColor = System.Drawing.Color.White;
+            this.txtID.HideSelection = true;
+            this.txtID.IconLeft = null;
+            this.txtID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.IconPadding = 10;
+            this.txtID.IconRight = null;
+            this.txtID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.Lines = new string[0];
+            this.txtID.Location = new System.Drawing.Point(9, 23);
+            this.txtID.MaxLength = 32767;
+            this.txtID.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtID.Modified = false;
+            this.txtID.Multiline = false;
+            this.txtID.Name = "txtID";
+            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtID.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtID.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtID.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.Silver;
+            stateProperties28.FillColor = System.Drawing.Color.White;
+            stateProperties28.ForeColor = System.Drawing.Color.Empty;
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtID.OnIdleState = stateProperties28;
+            this.txtID.Padding = new System.Windows.Forms.Padding(3);
+            this.txtID.PasswordChar = '\0';
+            this.txtID.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtID.PlaceholderText = "id";
+            this.txtID.ReadOnly = false;
+            this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtID.SelectedText = "";
+            this.txtID.SelectionLength = 0;
+            this.txtID.SelectionStart = 0;
+            this.txtID.ShortcutsEnabled = true;
+            this.txtID.Size = new System.Drawing.Size(56, 37);
+            this.txtID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtID.TabIndex = 19;
+            this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtID.TextMarginBottom = 0;
+            this.txtID.TextMarginLeft = 3;
+            this.txtID.TextMarginTop = 0;
+            this.txtID.TextPlaceholder = "id";
+            this.txtID.UseSystemPasswordChar = false;
+            this.txtID.Visible = false;
+            this.txtID.WordWrap = true;
+            // 
+            // datePicker
+            // 
+            this.datePicker.BackColor = System.Drawing.Color.Transparent;
+            this.datePicker.BorderRadius = 1;
+            this.datePicker.Color = System.Drawing.Color.Silver;
+            this.datePicker.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.datePicker.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.datePicker.DisabledColor = System.Drawing.Color.Gray;
+            this.datePicker.DisplayWeekNumbers = false;
+            this.datePicker.DPHeight = 0;
+            this.datePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.datePicker.FillDatePicker = false;
+            this.datePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.datePicker.ForeColor = System.Drawing.Color.Black;
+            this.datePicker.Icon = ((System.Drawing.Image)(resources.GetObject("datePicker.Icon")));
+            this.datePicker.IconColor = System.Drawing.Color.Gray;
+            this.datePicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.datePicker.LeftTextMargin = 5;
+            this.datePicker.Location = new System.Drawing.Point(417, 67);
+            this.datePicker.MinimumSize = new System.Drawing.Size(4, 32);
+            this.datePicker.Name = "datePicker";
+            this.datePicker.Size = new System.Drawing.Size(220, 32);
+            this.datePicker.TabIndex = 18;
+            // 
+            // comboBoxHeur
+            // 
+            this.comboBoxHeur.DropDownHeight = 150;
+            this.comboBoxHeur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxHeur.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.comboBoxHeur.FormattingEnabled = true;
+            this.comboBoxHeur.IntegralHeight = false;
+            this.comboBoxHeur.Items.AddRange(new object[] {
+            "14",
+            "18",
+            "21",
+            "7"});
+            this.comboBoxHeur.Location = new System.Drawing.Point(297, 115);
+            this.comboBoxHeur.Name = "comboBoxHeur";
+            this.comboBoxHeur.Size = new System.Drawing.Size(94, 31);
+            this.comboBoxHeur.Sorted = true;
+            this.comboBoxHeur.TabIndex = 17;
+            // 
             // datagridvHumidity
             // 
             this.datagridvHumidity.AllowCustomTheming = false;
@@ -3543,9 +3660,11 @@ namespace HumidityDesktop
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(801, 14);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(796, 14);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -3587,7 +3706,7 @@ namespace HumidityDesktop
             this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
             this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = this.bunifuPanel3;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
             // humidityCalculatorDataSet
@@ -3604,122 +3723,6 @@ namespace HumidityDesktop
             // 
             this.observateurTableAdapter.ClearBeforeFill = true;
             // 
-            // comboBoxHeur
-            // 
-            this.comboBoxHeur.DropDownHeight = 150;
-            this.comboBoxHeur.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxHeur.Font = new System.Drawing.Font("Segoe UI", 13F);
-            this.comboBoxHeur.FormattingEnabled = true;
-            this.comboBoxHeur.IntegralHeight = false;
-            this.comboBoxHeur.Items.AddRange(new object[] {
-            "14",
-            "18",
-            "21",
-            "7"});
-            this.comboBoxHeur.Location = new System.Drawing.Point(297, 115);
-            this.comboBoxHeur.Name = "comboBoxHeur";
-            this.comboBoxHeur.Size = new System.Drawing.Size(94, 31);
-            this.comboBoxHeur.Sorted = true;
-            this.comboBoxHeur.TabIndex = 17;
-            // 
-            // datePicker
-            // 
-            this.datePicker.BackColor = System.Drawing.Color.Transparent;
-            this.datePicker.BorderRadius = 1;
-            this.datePicker.Color = System.Drawing.Color.Silver;
-            this.datePicker.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.datePicker.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.datePicker.DisabledColor = System.Drawing.Color.Gray;
-            this.datePicker.DisplayWeekNumbers = false;
-            this.datePicker.DPHeight = 0;
-            this.datePicker.FillDatePicker = false;
-            this.datePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.datePicker.ForeColor = System.Drawing.Color.Black;
-            this.datePicker.Icon = ((System.Drawing.Image)(resources.GetObject("datePicker.Icon")));
-            this.datePicker.IconColor = System.Drawing.Color.Gray;
-            this.datePicker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.datePicker.LeftTextMargin = 5;
-            this.datePicker.Location = new System.Drawing.Point(417, 67);
-            this.datePicker.MinimumSize = new System.Drawing.Size(0, 32);
-            this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(220, 32);
-            this.datePicker.TabIndex = 18;
-            // 
-            // txtID
-            // 
-            this.txtID.AcceptsReturn = false;
-            this.txtID.AcceptsTab = false;
-            this.txtID.AnimationSpeed = 200;
-            this.txtID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtID.BackColor = System.Drawing.Color.Transparent;
-            this.txtID.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtID.BackgroundImage")));
-            this.txtID.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtID.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtID.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtID.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtID.BorderRadius = 1;
-            this.txtID.BorderThickness = 1;
-            this.txtID.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtID.DefaultText = "";
-            this.txtID.FillColor = System.Drawing.Color.White;
-            this.txtID.HideSelection = true;
-            this.txtID.IconLeft = null;
-            this.txtID.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID.IconPadding = 10;
-            this.txtID.IconRight = null;
-            this.txtID.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtID.Lines = new string[0];
-            this.txtID.Location = new System.Drawing.Point(9, 23);
-            this.txtID.MaxLength = 32767;
-            this.txtID.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtID.Modified = false;
-            this.txtID.Multiline = false;
-            this.txtID.Name = "txtID";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtID.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtID.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtID.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtID.OnIdleState = stateProperties28;
-            this.txtID.Padding = new System.Windows.Forms.Padding(3);
-            this.txtID.PasswordChar = '\0';
-            this.txtID.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtID.PlaceholderText = "id";
-            this.txtID.ReadOnly = false;
-            this.txtID.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtID.SelectedText = "";
-            this.txtID.SelectionLength = 0;
-            this.txtID.SelectionStart = 0;
-            this.txtID.ShortcutsEnabled = true;
-            this.txtID.Size = new System.Drawing.Size(56, 37);
-            this.txtID.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtID.TabIndex = 19;
-            this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtID.TextMarginBottom = 0;
-            this.txtID.TextMarginLeft = 3;
-            this.txtID.TextMarginTop = 0;
-            this.txtID.TextPlaceholder = "id";
-            this.txtID.UseSystemPasswordChar = false;
-            this.txtID.Visible = false;
-            this.txtID.WordWrap = true;
-            // 
             // PrancipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3730,6 +3733,7 @@ namespace HumidityDesktop
             this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PrancipalForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrancipalForm";
             this.Load += new System.EventHandler(this.PrancipalForm_Load);
             this.bunifuPanel1.ResumeLayout(false);

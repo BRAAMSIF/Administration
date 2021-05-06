@@ -103,20 +103,30 @@ namespace HumidityDesktop
 
         private void datagridvObs_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxCodeObs.Text = datagridvObs.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBoxNomObs.Text = datagridvObs.Rows[e.RowIndex].Cells[1].Value == null ? "" : datagridvObs.Rows[e.RowIndex].Cells[1].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                textBoxCodeObs.Text = datagridvObs.Rows[e.RowIndex].Cells[0].Value.ToString();
+                textBoxNomObs.Text = datagridvObs.Rows[e.RowIndex].Cells[1].Value == null ? "" : datagridvObs.Rows[e.RowIndex].Cells[1].Value.ToString();
+            }
         }
 
         private void datagridvStat_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxNomStat.Text = datagridvStat.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxCodeStat.Text = datagridvStat.Rows[e.RowIndex].Cells[0].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                textBoxNomStat.Text = datagridvStat.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBoxCodeStat.Text = datagridvStat.Rows[e.RowIndex].Cells[0].Value.ToString();
+        
+            }
         }
 
         private void datagridvB_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxNomBas.Text = datagridvB.Rows[e.RowIndex].Cells[1].Value.ToString();
-            textBoxCodeBas.Text = datagridvB.Rows[e.RowIndex].Cells[0].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                textBoxNomBas.Text = datagridvB.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textBoxCodeBas.Text = datagridvB.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
         }
 
         private void BtnAjObs_Click(object sender, EventArgs e)
@@ -292,32 +302,32 @@ namespace HumidityDesktop
                 humidity.ObservateurId = Convert.ToInt32(comboBoxObs.SelectedItem.ToString().Split(' ')[0]);
                 humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
 
+                db.RelativeHumidities.Add(humidity);
                 db.SaveChanges();
                 RemplireLesGrid();
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Vous devez selectionné un station et un observateure");
             }
-            db.RelativeHumidities.Add(humidity);
-            db.SaveChanges();
-            RemplireLesGrid();
         }
 
         private void datagridvHumidity_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtID.Text = datagridvHumidity.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtSec.Text = datagridvHumidity.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtMou.Text = datagridvHumidity.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtHum.Text = datagridvHumidity.Rows[e.RowIndex].Cells[3].Value.ToString();
-            comboBoxHeur.Text = datagridvHumidity.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtMax.Text = datagridvHumidity.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtMin.Text = datagridvHumidity.Rows[e.RowIndex].Cells[6].Value.ToString();
-            txtMoy.Text = datagridvHumidity.Rows[e.RowIndex].Cells[7].Value.ToString();
-            txtMa.Text = datagridvHumidity.Rows[e.RowIndex].Cells[8].Value.ToString();
-            txtMi.Text = datagridvHumidity.Rows[e.RowIndex].Cells[9].Value.ToString();
-            datePicker.Text = datagridvHumidity.Rows[e.RowIndex].Cells[10].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                txtID.Text = datagridvHumidity.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtSec.Text = datagridvHumidity.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtMou.Text = datagridvHumidity.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtHum.Text = datagridvHumidity.Rows[e.RowIndex].Cells[3].Value.ToString();
+                comboBoxHeur.Text = datagridvHumidity.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtMax.Text = datagridvHumidity.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txtMin.Text = datagridvHumidity.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txtMoy.Text = datagridvHumidity.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txtMa.Text = datagridvHumidity.Rows[e.RowIndex].Cells[8].Value.ToString();
+                txtMi.Text = datagridvHumidity.Rows[e.RowIndex].Cells[9].Value.ToString();
+                datePicker.Text = datagridvHumidity.Rows[e.RowIndex].Cells[10].Value.ToString();
+            }
         }
 
         private void BtnModifier_Click(object sender, EventArgs e)
