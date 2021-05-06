@@ -160,37 +160,16 @@
     <Compile Include="C__EFMigrationsHistory.cs">
       <DependentUpon>HumidityCalculator.tt</DependentUpon>
     </Compile>
-    <Compile Include="gg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="gg.Designer.cs">
-      <DependentUpon>gg.cs</DependentUpon>
-    </Compile>
     <Compile Include="HumidityCalculatorDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>HumidityCalculatorDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Prancipal.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="PrancipalForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PrancipalForm.Designer.cs">
       <DependentUpon>PrancipalForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="sa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="sa.Designer.cs">
-      <DependentUpon>sa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="x.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="x.Designer.cs">
-      <DependentUpon>x.cs</DependentUpon>
     </Compile>
     <Compile Include="HumidityCalculator.Context.cs">
       <AutoGen>True</AutoGen>
@@ -221,17 +200,8 @@
     <Compile Include="User.cs">
       <DependentUpon>HumidityCalculator.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="gg.resx">
-      <DependentUpon>gg.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PrancipalForm.resx">
       <DependentUpon>PrancipalForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="sa.resx">
-      <DependentUpon>sa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="x.resx">
-      <DependentUpon>x.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
