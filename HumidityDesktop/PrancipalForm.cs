@@ -21,8 +21,6 @@ namespace HumidityDesktop
 
         private void PrancipalForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'humidityCalculatorDataSet.Observateur' table. You can move, or remove it, as needed.
-            this.observateurTableAdapter.Fill(this.humidityCalculatorDataSet.Observateur);
             bunifuLabel1.Text = "COPYRIGHT © " + DateTime.Now.Year + " ABHGZR, ";
             RemplireLesGrid();
         }
@@ -278,7 +276,33 @@ namespace HumidityDesktop
 
         private void BtnAjouter_Click(object sender, EventArgs e)
         {
+            RelativeHumidity humidity = new RelativeHumidity();
+            try
+            {
+                humidity.DateObservation = datePicker.Value;
+                humidity.Heur = Convert.ToInt32(comboBoxHeur.SelectedItem.ToString());
+                humidity.Sec = (float)Convert.ToDouble(txtSec.Text);
+                humidity.Mou = (float)Convert.ToDouble(txtMou.Text);
+                humidity.Hum = (float)Convert.ToDouble(txtHum.Text);
+                humidity.ThermometreMA = (float)Convert.ToDouble(txtMa.Text);
+                humidity.ThermometreMax = (float)Convert.ToDouble(txtMax.Text);
+                humidity.ThermometreMoyMaxMin = (float)Convert.ToDouble(txtMoy.Text);
+                humidity.ThermometreMin = (float)Convert.ToDouble(txtMin.Text);
+                humidity.ThermometreMI = (float)Convert.ToDouble(txtMi.Text);
+                humidity.ObservateurId = Convert.ToInt32(comboBoxObs.SelectedItem.ToString().Split(' ')[0]);
+                humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
 
+                db.SaveChanges();
+                RemplireLesGrid();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Vous devez selectionné un station et un observateure");
+            }
+            db.RelativeHumidities.Add(humidity);
+            db.SaveChanges();
+            RemplireLesGrid();
         }
 
         private void datagridvHumidity_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -294,6 +318,34 @@ namespace HumidityDesktop
             txtMa.Text = datagridvHumidity.Rows[e.RowIndex].Cells[8].Value.ToString();
             txtMi.Text = datagridvHumidity.Rows[e.RowIndex].Cells[9].Value.ToString();
             datePicker.Text = datagridvHumidity.Rows[e.RowIndex].Cells[10].Value.ToString();
+        }
+
+        private void BtnModifier_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtID.Text);
+            RelativeHumidity humidity = db.RelativeHumidities.SingleOrDefault(h => h.RelativeHumidityId == id);
+            try
+            {
+                humidity.DateObservation = datePicker.Value;
+                humidity.Heur = Convert.ToInt32(comboBoxHeur.SelectedItem.ToString());
+                humidity.Sec = (float)Convert.ToDouble(txtSec.Text);
+                humidity.Mou = (float)Convert.ToDouble(txtMou.Text);
+                humidity.Hum = (float)Convert.ToDouble(txtHum.Text);
+                humidity.ThermometreMA = (float)Convert.ToDouble(txtMa.Text);
+                humidity.ThermometreMax = (float)Convert.ToDouble(txtMax.Text);
+                humidity.ThermometreMoyMaxMin = (float)Convert.ToDouble(txtMoy.Text);
+                humidity.ThermometreMin = (float)Convert.ToDouble(txtMin.Text);
+                humidity.ThermometreMI = (float)Convert.ToDouble(txtMi.Text);
+                humidity.ObservateurId = Convert.ToInt32(comboBoxObs.SelectedItem.ToString().Split(' ')[0]);
+                humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
+                db.SaveChanges();
+                RemplireLesGrid();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Vous devez selectionné un station et un observateure");
+            }
         }
     }
 }

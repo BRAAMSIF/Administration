@@ -2719,6 +2719,7 @@ namespace HumidityDesktop
             this.BtnModifier.TextMarginLeft = 0;
             this.BtnModifier.TextPadding = new System.Windows.Forms.Padding(0);
             this.BtnModifier.UseDefaultRadiusAndThickness = true;
+            this.BtnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
             // 
             // BtnAjouter
             // 
