@@ -171,10 +171,13 @@ namespace HumidityDesktop
                 observateur.StationId = Convert.ToInt32(textBoxCodeStat.Text);
                 db.Observateurs.Add(observateur);
                 db.SaveChanges();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             }
             catch (Exception)
             {
                 ErrorMsg E = new ErrorMsg();
+                E.msg = "Station";
                 E.Show();
             }
             RemplireLesGrid();
@@ -189,10 +192,14 @@ namespace HumidityDesktop
                 db.Observateurs.Remove(observateur);
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             }
             else
             {
-                MessageBox.Show("Vous devez selectionné un Observateur");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "Observateur";
+                E.Show();
             }
         }
 
@@ -205,6 +212,8 @@ namespace HumidityDesktop
                 observateur.NomPrenomObservateur = textBoxNomObs.Text;
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             } else
             {
                 MessageBox.Show("Invalid Nom");
@@ -237,10 +246,14 @@ namespace HumidityDesktop
                 station.BassinId = Convert.ToInt32(textBoxCodeBas.Text);
                 db.Stations.Add(station);
                 db.SaveChanges();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             }
             catch (Exception)
             {
-                MessageBox.Show("Vous devez selectioné un Bassin");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "Bassin";
+                E.Show();
             }
             RemplireLesGrid();
         }
@@ -254,6 +267,8 @@ namespace HumidityDesktop
                 station.NomStation = textBoxNomStat.Text;
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             } else
             {
                 MessageBox.Show("Invalid Nom");
@@ -269,9 +284,13 @@ namespace HumidityDesktop
                 db.Stations.Remove(station);
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             } else
             {
-                MessageBox.Show("Vous devez selectionné un Station");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "Station";
+                E.Show();
             }
         }
 
@@ -300,6 +319,8 @@ namespace HumidityDesktop
                 bassin.NomBassin = textBoxNomBas.Text;
                 db.Bassins.Add(bassin);
                 db.SaveChanges();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             }
             catch (Exception ex)
             {
@@ -317,6 +338,8 @@ namespace HumidityDesktop
                 bassin.NomBassin = textBoxNomBas.Text;
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             }
             else
             {
@@ -333,9 +356,13 @@ namespace HumidityDesktop
                 db.Bassins.Remove(bassin);
                 db.SaveChanges();
                 RemplireLesGrid();
+                SuccesMsg S = new SuccesMsg();
+                S.Show();
             } else
             {
-                MessageBox.Show("Vous devez selectionné un Bassin");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "Bassin";
+                E.Show();
             }
         }
 
@@ -378,15 +405,21 @@ namespace HumidityDesktop
                     db.RelativeHumidities.Add(humidity);
                     db.SaveChanges();
                     RemplireLesGrid();
+                    SuccesMsg S = new SuccesMsg();
+                    S.Show();
                 } else
                 {
-                    MessageBox.Show("Vous devez selectionné une heure ou bien un station et un observateure");
+                    ErrorMsg E = new ErrorMsg();
+                    E.msg = "heure ou bien un station et un observateure";
+                    E.Show();
                 }
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Vous devez selectionné un station et un observateure");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "station et un observateure";
+                E.Show();
             }
         }
 
@@ -412,7 +445,9 @@ namespace HumidityDesktop
         {
             if (txtID.Text == null || txtID.Text.Length <= 0)
             {
-                MessageBox.Show("Vous devez selectionné un enregistrement");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "heure ou bien un station et un enregistrement";
+                E.Show();
             } else
             {
                 int id = Convert.ToInt32(txtID.Text);
@@ -435,16 +470,21 @@ namespace HumidityDesktop
                         humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
                         db.SaveChanges();
                         RemplireLesGrid();
+                        SuccesMsg S = new SuccesMsg();
+                        S.Show();
                     }
                     else
                     {
-                        MessageBox.Show("Vous devez selectionné un station et un observateure");
+                        ErrorMsg E = new ErrorMsg();
+                        E.msg = "station et un observateure";
+                        E.Show();
                     }
                 }
                 catch (Exception)
                 {
-
-                    MessageBox.Show("Vous devez selectionné un station et un observateure");
+                    ErrorMsg E = new ErrorMsg();
+                    E.msg = "station et un observateure";
+                    E.Show();
                 }
             }
         }
@@ -453,7 +493,9 @@ namespace HumidityDesktop
         {
             if (comboBoxStatImport.SelectedItem == null || moieImporter.Value == null)
             {
-                MessageBox.Show("Vous devez sélectionné un station ");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "station";
+                E.Show();
             }
             else
             {
@@ -575,7 +617,9 @@ namespace HumidityDesktop
         {
             if (txtID.Text == null || txtID.Text.Length <= 0)
             {
-                MessageBox.Show("Vous devez selectionné un enregistrement");
+                ErrorMsg E = new ErrorMsg();
+                E.msg = "enregistrement";
+                E.Show();
             }
             else
             {
@@ -586,11 +630,14 @@ namespace HumidityDesktop
                     db.RelativeHumidities.Remove(humidity);
                     db.SaveChanges();
                     RemplireLesGrid();
+                    SuccesMsg S = new SuccesMsg();
+                    S.Show();
                 }
                 catch (Exception)
                 {
-
-                    MessageBox.Show("Vous devez selectionné un station et un observateure");
+                    ErrorMsg E = new ErrorMsg();
+                    E.msg = "station et un observateure";
+                    E.Show();
                 }
             }
         }

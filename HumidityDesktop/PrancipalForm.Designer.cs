@@ -642,10 +642,10 @@ namespace HumidityDesktop
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
             this.bunifuPages1.Padding = new System.Drawing.Point(0, 0);
-            this.bunifuPages1.Page = this.tabPage4;
-            this.bunifuPages1.PageIndex = 3;
-            this.bunifuPages1.PageName = "tabPage4";
-            this.bunifuPages1.PageTitle = "Contact";
+            this.bunifuPages1.Page = this.tabPage1;
+            this.bunifuPages1.PageIndex = 0;
+            this.bunifuPages1.PageName = "tabPage1";
+            this.bunifuPages1.PageTitle = "Tableau";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(837, 557);
             this.bunifuPages1.TabIndex = 1;
@@ -1859,7 +1859,7 @@ namespace HumidityDesktop
             this.textBoxNomBas.IconRight = null;
             this.textBoxNomBas.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxNomBas.Lines = new string[0];
-            this.textBoxNomBas.Location = new System.Drawing.Point(41, 41);
+            this.textBoxNomBas.Location = new System.Drawing.Point(41, 35);
             this.textBoxNomBas.Margin = new System.Windows.Forms.Padding(0);
             this.textBoxNomBas.MaxLength = 32767;
             this.textBoxNomBas.MinimumSize = new System.Drawing.Size(1, 1);

@@ -31,11 +31,11 @@ namespace HumidityDesktop
             bunifuFormDock1.SubscribeControlToDragEvents(panel1);
 
         }
-
+        public string msg { get; set; }
 
         private void ErrorMsg_Load(object sender, EventArgs e)
         {
-
+            bunifuLabel1.Text = "Vous devez selectioné un " + msg;
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
