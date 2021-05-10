@@ -124,6 +124,8 @@ namespace HumidityDesktop
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -133,6 +135,7 @@ namespace HumidityDesktop
             this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.BtnReStat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxCodeStat = new Bunifu.UI.WinForms.BunifuTextBox();
             this.datagridvStat = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -142,6 +145,7 @@ namespace HumidityDesktop
             this.BtnAStat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxNomStat = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.BtnReB = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxCodeBas = new Bunifu.UI.WinForms.BunifuTextBox();
             this.datagridvB = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -151,6 +155,7 @@ namespace HumidityDesktop
             this.BtnAjB = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxNomBas = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.BtnReObs = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxCodeObs = new Bunifu.UI.WinForms.BunifuTextBox();
             this.datagridvObs = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -160,6 +165,17 @@ namespace HumidityDesktop
             this.BtnAjObs = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.textBoxNomObs = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.txtID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.datePicker = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.comboBoxHeur = new System.Windows.Forms.ComboBox();
@@ -178,44 +194,14 @@ namespace HumidityDesktop
             this.txtMou = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtSec = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.comboBoxStatImport = new System.Windows.Forms.ComboBox();
             this.moieImporter = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.BtnImprimer = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.humidityCalculatorDataSet = new HumidityDesktop.HumidityCalculatorDataSet();
-            this.observateurBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.observateurTableAdapter = new HumidityDesktop.HumidityCalculatorDataSetTableAdapters.ObservateurTableAdapter();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -223,9 +209,24 @@ namespace HumidityDesktop
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.humidityCalculatorDataSet = new HumidityDesktop.HumidityCalculatorDataSet();
+            this.observateurBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.observateurTableAdapter = new HumidityDesktop.HumidityCalculatorDataSetTableAdapters.ObservateurTableAdapter();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.bunifuPages1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
@@ -235,27 +236,26 @@ namespace HumidityDesktop
             this.bunifuPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridvObs)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridvHumidity)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.bunifuPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.humidityCalculatorDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.observateurBindingSource)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.bunifuPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.bunifuPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.bunifuPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.humidityCalculatorDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observateurBindingSource)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -281,7 +281,34 @@ namespace HumidityDesktop
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(191, 598);
             this.bunifuPanel1.TabIndex = 0;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(191, 81);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 9;
+            this.pictureBox11.TabStop = false;
+            // 
+            // bunifuLabel5
+            // 
+            this.bunifuLabel5.AllowParentOverrides = false;
+            this.bunifuLabel5.AutoEllipsis = false;
+            this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel5.Location = new System.Drawing.Point(18, 575);
+            this.bunifuLabel5.Name = "bunifuLabel5";
+            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel5.Size = new System.Drawing.Size(116, 12);
+            this.bunifuLabel5.TabIndex = 8;
+            this.bunifuLabel5.Text = "COPYRIGHT © 2021 ABHGZR,";
+            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // linkLabel1
             // 
@@ -615,10 +642,10 @@ namespace HumidityDesktop
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
             this.bunifuPages1.Padding = new System.Drawing.Point(0, 0);
-            this.bunifuPages1.Page = this.tabPage4;
-            this.bunifuPages1.PageIndex = 3;
-            this.bunifuPages1.PageName = "tabPage4";
-            this.bunifuPages1.PageTitle = "Contact";
+            this.bunifuPages1.Page = this.tabPage3;
+            this.bunifuPages1.PageIndex = 2;
+            this.bunifuPages1.PageName = "tabPage3";
+            this.bunifuPages1.PageTitle = "Imprimer";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(837, 557);
             this.bunifuPages1.TabIndex = 1;
@@ -676,6 +703,15 @@ namespace HumidityDesktop
             this.bunifuPanel5.ShowBorders = true;
             this.bunifuPanel5.Size = new System.Drawing.Size(274, 519);
             this.bunifuPanel5.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel2.Location = new System.Drawing.Point(44, 60);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 2);
+            this.panel2.TabIndex = 8;
             // 
             // BtnReStat
             // 
@@ -1237,6 +1273,7 @@ namespace HumidityDesktop
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxNomStat.OnIdleState = stateProperties8;
+            this.textBoxNomStat.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxNomStat.PasswordChar = '\0';
             this.textBoxNomStat.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBoxNomStat.PlaceholderText = "Doneer Nom De Station";
@@ -1280,6 +1317,15 @@ namespace HumidityDesktop
             this.bunifuPanel6.ShowBorders = true;
             this.bunifuPanel6.Size = new System.Drawing.Size(267, 519);
             this.bunifuPanel6.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel3.Location = new System.Drawing.Point(41, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 2);
+            this.panel3.TabIndex = 8;
             // 
             // BtnReB
             // 
@@ -1459,7 +1505,7 @@ namespace HumidityDesktop
             this.datagridvB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
@@ -1486,7 +1532,7 @@ namespace HumidityDesktop
             this.datagridvB.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
@@ -1695,7 +1741,6 @@ namespace HumidityDesktop
             this.label6.Size = new System.Drawing.Size(61, 21);
             this.label6.TabIndex = 1;
             this.label6.Text = "Bassin :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // BtnAjB
             // 
@@ -1841,6 +1886,7 @@ namespace HumidityDesktop
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxNomBas.OnIdleState = stateProperties16;
+            this.textBoxNomBas.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxNomBas.PasswordChar = '\0';
             this.textBoxNomBas.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBoxNomBas.PlaceholderText = "Donner Nom De Bassin";
@@ -1850,7 +1896,7 @@ namespace HumidityDesktop
             this.textBoxNomBas.SelectionLength = 0;
             this.textBoxNomBas.SelectionStart = 0;
             this.textBoxNomBas.ShortcutsEnabled = true;
-            this.textBoxNomBas.Size = new System.Drawing.Size(194, 28);
+            this.textBoxNomBas.Size = new System.Drawing.Size(194, 37);
             this.textBoxNomBas.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.textBoxNomBas.TabIndex = 0;
             this.textBoxNomBas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1883,6 +1929,15 @@ namespace HumidityDesktop
             this.bunifuPanel4.ShowBorders = true;
             this.bunifuPanel4.Size = new System.Drawing.Size(267, 519);
             this.bunifuPanel4.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel1.Location = new System.Drawing.Point(39, 64);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 2);
+            this.panel1.TabIndex = 7;
             // 
             // BtnReObs
             // 
@@ -2075,12 +2130,12 @@ namespace HumidityDesktop
             this.datagridvObs.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
             this.datagridvObs.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.datagridvObs.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.datagridvObs.CurrentTheme.BackColor = System.Drawing.Color.Transparent;
+            this.datagridvObs.CurrentTheme.BackColor = System.Drawing.Color.White;
             this.datagridvObs.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.datagridvObs.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.datagridvObs.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.datagridvObs.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.datagridvObs.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             this.datagridvObs.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.datagridvObs.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            this.datagridvObs.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             this.datagridvObs.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.datagridvObs.CurrentTheme.Name = null;
             this.datagridvObs.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -2098,7 +2153,7 @@ namespace HumidityDesktop
             this.datagridvObs.DefaultCellStyle = dataGridViewCellStyle9;
             this.datagridvObs.EnableHeadersVisualStyles = false;
             this.datagridvObs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.datagridvObs.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
+            this.datagridvObs.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.datagridvObs.HeaderBgColor = System.Drawing.Color.Empty;
             this.datagridvObs.HeaderForeColor = System.Drawing.Color.White;
             this.datagridvObs.Location = new System.Drawing.Point(11, 188);
@@ -2447,6 +2502,7 @@ namespace HumidityDesktop
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.textBoxNomObs.OnIdleState = stateProperties24;
+            this.textBoxNomObs.Padding = new System.Windows.Forms.Padding(3);
             this.textBoxNomObs.PasswordChar = '\0';
             this.textBoxNomObs.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.textBoxNomObs.PlaceholderText = " Donner le Nom Et Prenom...";
@@ -2501,7 +2557,108 @@ namespace HumidityDesktop
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Humidite";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel10.Location = new System.Drawing.Point(223, 177);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(79, 2);
+            this.panel10.TabIndex = 27;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel14.Location = new System.Drawing.Point(337, 139);
+            this.panel14.Margin = new System.Windows.Forms.Padding(0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(79, 2);
+            this.panel14.TabIndex = 29;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel5.Location = new System.Drawing.Point(122, 177);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(79, 2);
+            this.panel5.TabIndex = 21;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel15.Location = new System.Drawing.Point(337, 94);
+            this.panel15.Margin = new System.Windows.Forms.Padding(0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(79, 2);
+            this.panel15.TabIndex = 28;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel11.Location = new System.Drawing.Point(223, 139);
+            this.panel11.Margin = new System.Windows.Forms.Padding(0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(79, 2);
+            this.panel11.TabIndex = 26;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel6.Location = new System.Drawing.Point(122, 139);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(79, 2);
+            this.panel6.TabIndex = 21;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel12.Location = new System.Drawing.Point(223, 94);
+            this.panel12.Margin = new System.Windows.Forms.Padding(0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(79, 2);
+            this.panel12.TabIndex = 25;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Location = new System.Drawing.Point(122, 94);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(79, 2);
+            this.panel4.TabIndex = 20;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel7.Location = new System.Drawing.Point(101, 83);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(79, 2);
+            this.panel7.TabIndex = 24;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel8.Location = new System.Drawing.Point(101, 45);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(79, 2);
+            this.panel8.TabIndex = 23;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel9.Location = new System.Drawing.Point(101, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(79, 2);
+            this.panel9.TabIndex = 22;
             // 
             // txtID
             // 
@@ -3033,6 +3190,7 @@ namespace HumidityDesktop
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMa.OnIdleState = stateProperties32;
+            this.txtMa.Padding = new System.Windows.Forms.Padding(3);
             this.txtMa.PasswordChar = '\0';
             this.txtMa.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMa.PlaceholderText = "MA";
@@ -3107,6 +3265,7 @@ namespace HumidityDesktop
             stateProperties36.ForeColor = System.Drawing.Color.Empty;
             stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMi.OnIdleState = stateProperties36;
+            this.txtMi.Padding = new System.Windows.Forms.Padding(3);
             this.txtMi.PasswordChar = '\0';
             this.txtMi.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMi.PlaceholderText = "MI";
@@ -3181,6 +3340,7 @@ namespace HumidityDesktop
             stateProperties40.ForeColor = System.Drawing.Color.Empty;
             stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMoy.OnIdleState = stateProperties40;
+            this.txtMoy.Padding = new System.Windows.Forms.Padding(3);
             this.txtMoy.PasswordChar = '\0';
             this.txtMoy.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMoy.PlaceholderText = "Moyenne";
@@ -3255,6 +3415,7 @@ namespace HumidityDesktop
             stateProperties44.ForeColor = System.Drawing.Color.Empty;
             stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMax.OnIdleState = stateProperties44;
+            this.txtMax.Padding = new System.Windows.Forms.Padding(3);
             this.txtMax.PasswordChar = '\0';
             this.txtMax.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMax.PlaceholderText = "Max";
@@ -3274,7 +3435,6 @@ namespace HumidityDesktop
             this.txtMax.TextPlaceholder = "Max";
             this.txtMax.UseSystemPasswordChar = false;
             this.txtMax.WordWrap = true;
-            this.txtMax.TextChanged += new System.EventHandler(this.txtMax_TextChanged);
             // 
             // txtMin
             // 
@@ -3330,6 +3490,7 @@ namespace HumidityDesktop
             stateProperties48.ForeColor = System.Drawing.Color.Empty;
             stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMin.OnIdleState = stateProperties48;
+            this.txtMin.Padding = new System.Windows.Forms.Padding(3);
             this.txtMin.PasswordChar = '\0';
             this.txtMin.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMin.PlaceholderText = "Min";
@@ -3404,6 +3565,7 @@ namespace HumidityDesktop
             stateProperties52.ForeColor = System.Drawing.Color.Empty;
             stateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtHum.OnIdleState = stateProperties52;
+            this.txtHum.Padding = new System.Windows.Forms.Padding(3);
             this.txtHum.PasswordChar = '\0';
             this.txtHum.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtHum.PlaceholderText = "Hum";
@@ -3478,6 +3640,7 @@ namespace HumidityDesktop
             stateProperties56.ForeColor = System.Drawing.Color.Empty;
             stateProperties56.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtMou.OnIdleState = stateProperties56;
+            this.txtMou.Padding = new System.Windows.Forms.Padding(3);
             this.txtMou.PasswordChar = '\0';
             this.txtMou.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtMou.PlaceholderText = "Mou";
@@ -3552,6 +3715,7 @@ namespace HumidityDesktop
             stateProperties60.ForeColor = System.Drawing.Color.Empty;
             stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtSec.OnIdleState = stateProperties60;
+            this.txtSec.Padding = new System.Windows.Forms.Padding(3);
             this.txtSec.PasswordChar = '\0';
             this.txtSec.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtSec.PlaceholderText = "Sec";
@@ -3588,6 +3752,16 @@ namespace HumidityDesktop
             this.tabPage3.Text = "Imprimer";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(642, 263);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 278);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // bunifuLabel4
             // 
             this.bunifuLabel4.AllowParentOverrides = false;
@@ -3603,7 +3777,6 @@ namespace HumidityDesktop
             this.bunifuLabel4.Text = "Station : ";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel4.Click += new System.EventHandler(this.bunifuLabel4_Click);
             // 
             // comboBoxStatImport
             // 
@@ -3617,7 +3790,6 @@ namespace HumidityDesktop
             this.comboBoxStatImport.Size = new System.Drawing.Size(220, 31);
             this.comboBoxStatImport.Sorted = true;
             this.comboBoxStatImport.TabIndex = 13;
-            this.comboBoxStatImport.SelectedIndexChanged += new System.EventHandler(this.comboBoxStatImport_SelectedIndexChanged);
             // 
             // moieImporter
             // 
@@ -3642,7 +3814,6 @@ namespace HumidityDesktop
             this.moieImporter.Name = "moieImporter";
             this.moieImporter.Size = new System.Drawing.Size(220, 32);
             this.moieImporter.TabIndex = 3;
-            this.moieImporter.ValueChanged += new System.EventHandler(this.moieImporter_ValueChanged);
             // 
             // bunifuLabel3
             // 
@@ -3733,11 +3904,11 @@ namespace HumidityDesktop
             this.BtnImprimer.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.BtnImprimer.OnIdleState.IconLeftImage = null;
             this.BtnImprimer.OnIdleState.IconRightImage = null;
-            this.BtnImprimer.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BtnImprimer.OnPressedState.BorderColor = System.Drawing.Color.DarkSlateGray;
             this.BtnImprimer.OnPressedState.BorderRadius = 25;
             this.BtnImprimer.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.BtnImprimer.OnPressedState.BorderThickness = 1;
-            this.BtnImprimer.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.BtnImprimer.OnPressedState.FillColor = System.Drawing.Color.DarkSlateGray;
             this.BtnImprimer.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.BtnImprimer.OnPressedState.IconLeftImage = null;
             this.BtnImprimer.OnPressedState.IconRightImage = null;
@@ -3764,6 +3935,219 @@ namespace HumidityDesktop
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Contact";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
+            this.panel13.Location = new System.Drawing.Point(230, 74);
+            this.panel13.Margin = new System.Windows.Forms.Padding(0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(360, 3);
+            this.panel13.TabIndex = 12;
+            // 
+            // bunifuPanel7
+            // 
+            this.bunifuPanel7.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel7.BackgroundImage")));
+            this.bunifuPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel7.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel7.BorderRadius = 3;
+            this.bunifuPanel7.BorderThickness = 1;
+            this.bunifuPanel7.Controls.Add(this.label7);
+            this.bunifuPanel7.Controls.Add(this.bunifuLabel7);
+            this.bunifuPanel7.Controls.Add(this.pictureBox7);
+            this.bunifuPanel7.Controls.Add(this.pictureBox8);
+            this.bunifuPanel7.Controls.Add(this.pictureBox9);
+            this.bunifuPanel7.Controls.Add(this.pictureBox10);
+            this.bunifuPanel7.Location = new System.Drawing.Point(439, 272);
+            this.bunifuPanel7.Name = "bunifuPanel7";
+            this.bunifuPanel7.ShowBorders = true;
+            this.bunifuPanel7.Size = new System.Drawing.Size(311, 200);
+            this.bunifuPanel7.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(78, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(138, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "I am a Full Stack Developer";
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel7.Location = new System.Drawing.Point(59, 38);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(180, 28);
+            this.bunifuLabel7.TabIndex = 6;
+            this.bunifuLabel7.Text = "AMSSAYEF BRAHIM";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(50, 90);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(101, 90);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(152, 90);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 4;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(203, 90);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 5;
+            this.pictureBox10.TabStop = false;
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.label5);
+            this.bunifuPanel2.Controls.Add(this.bunifuLabel6);
+            this.bunifuPanel2.Controls.Add(this.pictureBox3);
+            this.bunifuPanel2.Controls.Add(this.pictureBox4);
+            this.bunifuPanel2.Controls.Add(this.pictureBox5);
+            this.bunifuPanel2.Controls.Add(this.pictureBox6);
+            this.bunifuPanel2.Location = new System.Drawing.Point(76, 272);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(311, 200);
+            this.bunifuPanel2.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(78, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "I am a Full Stack Developer";
+            // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel6.Location = new System.Drawing.Point(59, 38);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(173, 28);
+            this.bunifuLabel6.TabIndex = 6;
+            this.bunifuLabel6.Text = "MEGGOURI ISMAIL";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(50, 90);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(101, 90);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(152, 90);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(203, 90);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 144);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(410, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "* Cette Application calculer l\'humidite relative des stations des Bassins Guir-Rh" +
+    "eris-Ziz.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(226, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(364, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "L\'Agence du Bassin Hydraulique du Guir-Ziz-Rhéris";
             // 
             // bunifuPanel3
             // 
@@ -3869,385 +4253,6 @@ namespace HumidityDesktop
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1028, 598);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
-            // bunifuLabel5
-            // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel5.Location = new System.Drawing.Point(18, 575);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(116, 12);
-            this.bunifuLabel5.TabIndex = 8;
-            this.bunifuLabel5.Text = "COPYRIGHT © 2021 ABHGZR,";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel1.Location = new System.Drawing.Point(39, 64);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 2);
-            this.panel1.TabIndex = 7;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel2.Location = new System.Drawing.Point(44, 60);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 2);
-            this.panel2.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel3.Location = new System.Drawing.Point(41, 66);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 2);
-            this.panel3.TabIndex = 8;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Location = new System.Drawing.Point(122, 94);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(79, 2);
-            this.panel4.TabIndex = 20;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel5.Location = new System.Drawing.Point(122, 177);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(79, 2);
-            this.panel5.TabIndex = 21;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel6.Location = new System.Drawing.Point(122, 139);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(79, 2);
-            this.panel6.TabIndex = 21;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel7.Location = new System.Drawing.Point(101, 83);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(79, 2);
-            this.panel7.TabIndex = 24;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel8.Location = new System.Drawing.Point(101, 45);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(79, 2);
-            this.panel8.TabIndex = 23;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel9.Location = new System.Drawing.Point(101, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(79, 2);
-            this.panel9.TabIndex = 22;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel10.Location = new System.Drawing.Point(223, 177);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(79, 2);
-            this.panel10.TabIndex = 27;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel11.Location = new System.Drawing.Point(223, 139);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(79, 2);
-            this.panel11.TabIndex = 26;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel12.Location = new System.Drawing.Point(223, 94);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(79, 2);
-            this.panel12.TabIndex = 25;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel14.Location = new System.Drawing.Point(337, 139);
-            this.panel14.Margin = new System.Windows.Forms.Padding(0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(79, 2);
-            this.panel14.TabIndex = 29;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel15.Location = new System.Drawing.Point(337, 94);
-            this.panel15.Margin = new System.Windows.Forms.Padding(0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(79, 2);
-            this.panel15.TabIndex = 28;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(642, 263);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 278);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Location = new System.Drawing.Point(226, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(364, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "L\'Agence du Bassin Hydraulique du Guir-Ziz-Rhéris";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(410, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "* Cette Application calculer l\'humidite relative des stations des Bassins Guir-Rh" +
-    "eris-Ziz.";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 90);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(101, 90);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(152, 90);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(203, 90);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // bunifuPanel2
-            // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.label5);
-            this.bunifuPanel2.Controls.Add(this.bunifuLabel6);
-            this.bunifuPanel2.Controls.Add(this.pictureBox3);
-            this.bunifuPanel2.Controls.Add(this.pictureBox4);
-            this.bunifuPanel2.Controls.Add(this.pictureBox5);
-            this.bunifuPanel2.Controls.Add(this.pictureBox6);
-            this.bunifuPanel2.Location = new System.Drawing.Point(76, 272);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(311, 200);
-            this.bunifuPanel2.TabIndex = 10;
-            this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
-            // 
-            // bunifuLabel6
-            // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel6.Location = new System.Drawing.Point(59, 38);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(173, 28);
-            this.bunifuLabel6.TabIndex = 6;
-            this.bunifuLabel6.Text = "MEGGOURI ISMAIL";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(78, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "I am a Full Stack Developer";
-            // 
-            // bunifuPanel7
-            // 
-            this.bunifuPanel7.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel7.BackgroundImage")));
-            this.bunifuPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel7.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel7.BorderRadius = 3;
-            this.bunifuPanel7.BorderThickness = 1;
-            this.bunifuPanel7.Controls.Add(this.label7);
-            this.bunifuPanel7.Controls.Add(this.bunifuLabel7);
-            this.bunifuPanel7.Controls.Add(this.pictureBox7);
-            this.bunifuPanel7.Controls.Add(this.pictureBox8);
-            this.bunifuPanel7.Controls.Add(this.pictureBox9);
-            this.bunifuPanel7.Controls.Add(this.pictureBox10);
-            this.bunifuPanel7.Location = new System.Drawing.Point(439, 272);
-            this.bunifuPanel7.Name = "bunifuPanel7";
-            this.bunifuPanel7.ShowBorders = true;
-            this.bunifuPanel7.Size = new System.Drawing.Size(311, 200);
-            this.bunifuPanel7.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(78, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "I am a Full Stack Developer";
-            // 
-            // bunifuLabel7
-            // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.CursorType = null;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel7.Location = new System.Drawing.Point(59, 38);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(180, 28);
-            this.bunifuLabel7.TabIndex = 6;
-            this.bunifuLabel7.Text = "AMSSAYEF BRAHIM";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(50, 90);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(101, 90);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(152, 90);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 4;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(203, 90);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 5;
-            this.pictureBox10.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(212)))), ((int)(((byte)(113)))));
-            this.panel13.Location = new System.Drawing.Point(230, 74);
-            this.panel13.Margin = new System.Windows.Forms.Padding(0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(360, 3);
-            this.panel13.TabIndex = 12;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(191, 81);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 9;
-            this.pictureBox11.TabStop = false;
-            // 
             // PrancipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4261,6 +4266,7 @@ namespace HumidityDesktop
             this.Load += new System.EventHandler(this.PrancipalForm_Load);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.bunifuPages1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
@@ -4273,31 +4279,30 @@ namespace HumidityDesktop
             this.bunifuPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridvObs)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datagridvHumidity)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.bunifuPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.humidityCalculatorDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.observateurBindingSource)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel2.PerformLayout();
             this.bunifuPanel7.ResumeLayout(false);
             this.bunifuPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.bunifuPanel2.ResumeLayout(false);
+            this.bunifuPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.bunifuPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.humidityCalculatorDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.observateurBindingSource)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-//using Microsoft.Office.Interop.Excel;
+using Microsoft.Office.Interop.Excel;
 
 namespace HumidityDesktop
 {
@@ -91,9 +91,20 @@ namespace HumidityDesktop
             {
                 comboBoxStat.Items.Add(st.ID + " " + st.NomStation);
             }
-            foreach (var st in sta)
+            if (comboBoxStatImport.Items.Count > 0)
             {
-                comboBoxStatImport.Items.Add(st.ID + " " + st.NomStation);
+                comboBoxStatImport.Items.Clear();
+                foreach (var st in sta)
+                {
+                    comboBoxStatImport.Items.Add(st.ID + " " + st.NomStation);
+                }
+            }
+            else
+            {
+                foreach (var st in sta)
+                {
+                    comboBoxStatImport.Items.Add(st.ID + " " + st.NomStation);
+                }
             }
         } 
 
@@ -437,127 +448,127 @@ namespace HumidityDesktop
             }
         }
 
-        //private void BtnImprimer_Click(object sender, EventArgs e)
-        //{
-        //    if(comboBoxStatImport.SelectedItem == null || moieImporter.Value == null)
-        //    {
-        //        MessageBox.Show("Vous devez sélectionné un station ");
-        //    }
-        //    else
-        //    {
-        //        int id = Convert.ToInt32(comboBoxStatImport.SelectedItem.ToString().Split(' ')[0]);
-        //        int month = moieImporter.Value.Month;
-        //        var stations = db.RelativeHumidities.Where(hm => hm.StationId == id).ToList();
-        //        var moi = stations.Where(hm => hm.DateObservation.Month == month).ToList();
-        //        var h7 = (from rh in moi
-        //                  where rh.Heur == 7
-        //                  select new
-        //                  {
-        //                      Sec = rh.Sec,
-        //                      Mou = rh.Mou,
-        //                      Hum = rh.Hum,
-        //                      date = rh.DateObservation
-        //                  }).ToList();
-        //        var h14 = (from rh in moi
-        //                   where rh.Heur == 14
-        //                   select new
-        //                   {
-        //                       Sec = rh.Sec,
-        //                       Mou = rh.Mou,
-        //                       Hum = rh.Hum,
-        //                       date = rh.DateObservation
-        //                   }).ToList();
-        //        var h18 = (from rh in moi
-        //                   where rh.Heur == 18
-        //                   select new
-        //                   {
-        //                       Sec = rh.Sec,
-        //                       Mou = rh.Mou,
-        //                       Hum = rh.Hum,
-        //                       date = rh.DateObservation
-        //                   }).ToList();
-        //        var h21 = (from rh in moi
-        //                   where rh.Heur == 21
-        //                   select new
-        //                   {
-        //                       Sec = rh.Sec,
-        //                       Mou = rh.Mou,
-        //                       Hum = rh.Hum,
-        //                       MAX = rh.ThermometreMax,
-        //                       MIN = rh.ThermometreMin,
-        //                       MOY = Math.Round(rh.ThermometreMoyMaxMin, 2),
-        //                       MA = rh.ThermometreMA,
-        //                       MI = rh.ThermometreMI,
-        //                       date = rh.DateObservation
-        //                   }).ToList();
+        private void BtnImprimer_Click(object sender, EventArgs e)
+        {
+            if (comboBoxStatImport.SelectedItem == null || moieImporter.Value == null)
+            {
+                MessageBox.Show("Vous devez sélectionné un station ");
+            }
+            else
+            {
+                int id = Convert.ToInt32(comboBoxStatImport.SelectedItem.ToString().Split(' ')[0]);
+                int month = moieImporter.Value.Month;
+                var stations = db.RelativeHumidities.Where(hm => hm.StationId == id).ToList();
+                var moi = stations.Where(hm => hm.DateObservation.Month == month).ToList();
+                var h7 = (from rh in moi
+                          where rh.Heur == 7
+                          select new
+                          {
+                              Sec = rh.Sec,
+                              Mou = rh.Mou,
+                              Hum = rh.Hum,
+                              date = rh.DateObservation
+                          }).ToList();
+                var h14 = (from rh in moi
+                           where rh.Heur == 14
+                           select new
+                           {
+                               Sec = rh.Sec,
+                               Mou = rh.Mou,
+                               Hum = rh.Hum,
+                               date = rh.DateObservation
+                           }).ToList();
+                var h18 = (from rh in moi
+                           where rh.Heur == 18
+                           select new
+                           {
+                               Sec = rh.Sec,
+                               Mou = rh.Mou,
+                               Hum = rh.Hum,
+                               date = rh.DateObservation
+                           }).ToList();
+                var h21 = (from rh in moi
+                           where rh.Heur == 21
+                           select new
+                           {
+                               Sec = rh.Sec,
+                               Mou = rh.Mou,
+                               Hum = rh.Hum,
+                               MAX = rh.ThermometreMax,
+                               MIN = rh.ThermometreMin,
+                               MOY = Math.Round(rh.ThermometreMoyMaxMin, 2),
+                               MA = rh.ThermometreMA,
+                               MI = rh.ThermometreMI,
+                               date = rh.DateObservation
+                           }).ToList();
 
-        //        if (moi.ToList().Count > 0)
-        //        {
+                if (moi.ToList().Count > 0)
+                {
 
-        //            Microsoft.Office.Interop.Excel.Application xcelApp = new Microsoft.Office.Interop.Excel.Application();
-        //            xcelApp.Application.Workbooks.Add(Type.Missing);
-        //            string[] str = { "Jour", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Max", "Min", "Moy", "MA", "MI" };
-        //            string[] heure = { "", "", "7H", "", "", "14H", "", "", "18H", "", "", "21H", "", "", "", "21", "Heures", "", "" };
-        //            for (int i = 0; i < heure.Length; i++)
-        //            {
-        //                xcelApp.Cells[1, i + 1] = heure[i];
-        //            }
-        //            for (int i = 0; i < str.Length; i++)
-        //            {
-        //                xcelApp.Cells[2, i + 1] = str[i];
-        //            }
+                    Microsoft.Office.Interop.Excel.Application xcelApp = new Microsoft.Office.Interop.Excel.Application();
+                    xcelApp.Application.Workbooks.Add(Type.Missing);
+                    string[] str = { "Jour", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Sec", "Mou", "Hum", "Max", "Min", "Moy", "MA", "MI" };
+                    string[] heure = { "", "", "7H", "", "", "14H", "", "", "18H", "", "", "21H", "", "", "", "21", "Heures", "", "" };
+                    for (int i = 0; i < heure.Length; i++)
+                    {
+                        xcelApp.Cells[1, i + 1] = heure[i];
+                    }
+                    for (int i = 0; i < str.Length; i++)
+                    {
+                        xcelApp.Cells[2, i + 1] = str[i];
+                    }
 
-        //            int days = DateTime.DaysInMonth(moieImporter.Value.Year, moieImporter.Value.Month);
+                    int days = DateTime.DaysInMonth(moieImporter.Value.Year, moieImporter.Value.Month);
 
-        //            for (int i = 1; i <= days; i++)
-        //            {
-        //                xcelApp.Cells[i + 2, 1] = i;
-        //            }
+                    for (int i = 1; i <= days; i++)
+                    {
+                        xcelApp.Cells[i + 2, 1] = i;
+                    }
 
-        //            for (int i = 0; i < h7.Count; i++)
-        //            {
-        //                int day = h7[i].date.Day;
-        //                xcelApp.Cells[2 + day, 2] = h7[i].Sec.ToString();
-        //                xcelApp.Cells[2 + day, 3] = h7[i].Mou.ToString();
-        //                xcelApp.Cells[2 + day, 4] = h7[i].Hum.ToString();
-        //            }
+                    for (int i = 0; i < h7.Count; i++)
+                    {
+                        int day = h7[i].date.Day;
+                        xcelApp.Cells[2 + day, 2] = h7[i].Sec.ToString();
+                        xcelApp.Cells[2 + day, 3] = h7[i].Mou.ToString();
+                        xcelApp.Cells[2 + day, 4] = h7[i].Hum.ToString();
+                    }
 
-        //            for (int i = 0; i < h14.Count; i++)
-        //            {
-        //                int day = h14[i].date.Day;
-        //                xcelApp.Cells[2 + day, 5] = h14[i].Sec.ToString();
-        //                xcelApp.Cells[2 + day, 6] = h14[i].Mou.ToString();
-        //                xcelApp.Cells[2 + day, 7] = h14[i].Hum.ToString();
-        //            }
+                    for (int i = 0; i < h14.Count; i++)
+                    {
+                        int day = h14[i].date.Day;
+                        xcelApp.Cells[2 + day, 5] = h14[i].Sec.ToString();
+                        xcelApp.Cells[2 + day, 6] = h14[i].Mou.ToString();
+                        xcelApp.Cells[2 + day, 7] = h14[i].Hum.ToString();
+                    }
 
-        //            for (int i = 0; i < h18.Count; i++)
-        //            {
-        //                int day = h18[i].date.Day;
-        //                xcelApp.Cells[2 + day, 8] = h18[i].Sec.ToString();
-        //                xcelApp.Cells[2 + day, 9] = h18[i].Mou.ToString();
-        //                xcelApp.Cells[2 + day, 10] = h18[i].Hum.ToString();
-        //            }
+                    for (int i = 0; i < h18.Count; i++)
+                    {
+                        int day = h18[i].date.Day;
+                        xcelApp.Cells[2 + day, 8] = h18[i].Sec.ToString();
+                        xcelApp.Cells[2 + day, 9] = h18[i].Mou.ToString();
+                        xcelApp.Cells[2 + day, 10] = h18[i].Hum.ToString();
+                    }
 
-        //            for (int i = 0; i < h21.Count; i++)
-        //            {
-        //                int day = h21[i].date.Day;
-        //                xcelApp.Cells[2 + day, 11] = h21[i].Sec.ToString();
-        //                xcelApp.Cells[2 + day, 12] = h21[i].Mou.ToString();
-        //                xcelApp.Cells[2 + day, 13] = h21[i].Hum.ToString();
-        //                xcelApp.Cells[2 + day, 14] = h21[i].MAX.ToString();
-        //                xcelApp.Cells[2 + day, 15] = h21[i].MIN.ToString();
-        //                xcelApp.Cells[2 + day, 16] = h21[i].MOY.ToString();
-        //                xcelApp.Cells[2 + day, 17] = h21[i].MA.ToString();
-        //                xcelApp.Cells[2 + day, 18] = h21[i].MI.ToString();
-        //            }
+                    for (int i = 0; i < h21.Count; i++)
+                    {
+                        int day = h21[i].date.Day;
+                        xcelApp.Cells[2 + day, 11] = h21[i].Sec.ToString();
+                        xcelApp.Cells[2 + day, 12] = h21[i].Mou.ToString();
+                        xcelApp.Cells[2 + day, 13] = h21[i].Hum.ToString();
+                        xcelApp.Cells[2 + day, 14] = h21[i].MAX.ToString();
+                        xcelApp.Cells[2 + day, 15] = h21[i].MIN.ToString();
+                        xcelApp.Cells[2 + day, 16] = h21[i].MOY.ToString();
+                        xcelApp.Cells[2 + day, 17] = h21[i].MA.ToString();
+                        xcelApp.Cells[2 + day, 18] = h21[i].MI.ToString();
+                    }
 
 
-        //            xcelApp.Columns.AutoFit();
-        //            xcelApp.Visible = true;
-        //        }
+                    xcelApp.Columns.AutoFit();
+                    xcelApp.Visible = true;
+                }
 
-        //    }
-        //}
+            }
+        }
 
         private void BtnSupprimer_Click(object sender, EventArgs e)
         {
@@ -583,64 +594,9 @@ namespace HumidityDesktop
             }
         }
 
-        private void bunifuGradientPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMax_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnImprimer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void moieImporter_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxStatImport_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/meggouriIsmail");
-        }
-
-        private void bunifuPanel2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
