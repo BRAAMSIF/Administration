@@ -160,6 +160,12 @@
     <Compile Include="C__EFMigrationsHistory.cs">
       <DependentUpon>HumidityCalculator.tt</DependentUpon>
     </Compile>
+    <Compile Include="ErrorMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorMsg.Designer.cs">
+      <DependentUpon>ErrorMsg.cs</DependentUpon>
+    </Compile>
     <Compile Include="HumidityCalculatorDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -197,9 +203,18 @@
     <Compile Include="Station.cs">
       <DependentUpon>HumidityCalculator.tt</DependentUpon>
     </Compile>
+    <Compile Include="SuccesMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccesMsg.Designer.cs">
+      <DependentUpon>SuccesMsg.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>HumidityCalculator.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ErrorMsg.resx">
+      <DependentUpon>ErrorMsg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrancipalForm.resx">
       <DependentUpon>PrancipalForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +228,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SuccesMsg.resx">
+      <DependentUpon>SuccesMsg.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="HumidityCalculator.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HumidityCalculator.Designer.cs</LastGenOutput>

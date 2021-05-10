@@ -174,7 +174,8 @@ namespace HumidityDesktop
             }
             catch (Exception)
             {
-                MessageBox.Show("Vous devez selectioné un station");
+                ErrorMsg E = new ErrorMsg();
+                E.Show();
             }
             RemplireLesGrid();
         }
