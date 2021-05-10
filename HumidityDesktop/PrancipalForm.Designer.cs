@@ -642,10 +642,10 @@ namespace HumidityDesktop
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
             this.bunifuPages1.Padding = new System.Drawing.Point(0, 0);
-            this.bunifuPages1.Page = this.tabPage3;
-            this.bunifuPages1.PageIndex = 2;
-            this.bunifuPages1.PageName = "tabPage3";
-            this.bunifuPages1.PageTitle = "Imprimer";
+            this.bunifuPages1.Page = this.tabPage4;
+            this.bunifuPages1.PageIndex = 3;
+            this.bunifuPages1.PageName = "tabPage4";
+            this.bunifuPages1.PageTitle = "Contact";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(837, 557);
             this.bunifuPages1.TabIndex = 1;
@@ -4035,6 +4035,7 @@ namespace HumidityDesktop
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 5;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // bunifuPanel2
             // 

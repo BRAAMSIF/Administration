@@ -629,6 +629,11 @@ namespace HumidityDesktop
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
+            Process.Start("https://www.instagram.com/baamif");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
             Process.Start("https://www.facebook.com/bra.amsif");
         }
     }
