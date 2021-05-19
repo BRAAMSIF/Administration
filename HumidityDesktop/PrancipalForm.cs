@@ -83,27 +83,30 @@ namespace HumidityDesktop
                            Date = rh.DateObservation
                        });
             datagridvHumidity.DataSource = rhs.ToList();
-            foreach (var ob in obser)
+            
+            if (comboBoxObs.Items.Count > 0)
             {
-                comboBoxObs.Items.Add(ob.ID + " " + ob.NomPrenom);
+                comboBoxObs.Items.Clear();
             }
-            foreach (var st in sta)
+            else
             {
-                comboBoxStat.Items.Add(st.ID + " " + st.NomStation);
+                foreach (var ob in obser)
+                {
+                    comboBoxObs.Items.Add(ob.ID + " " + ob.NomPrenom);
+                }
             }
+
             if (comboBoxStatImport.Items.Count > 0)
             {
                 comboBoxStatImport.Items.Clear();
-                foreach (var st in sta)
-                {
-                    comboBoxStatImport.Items.Add(st.ID + " " + st.NomStation);
-                }
+                comboBoxStat.Items.Clear();
             }
             else
             {
                 foreach (var st in sta)
                 {
                     comboBoxStatImport.Items.Add(st.ID + " " + st.NomStation);
+                    comboBoxStat.Items.Add(st.ID + " " + st.NomStation);
                 }
             }
         } 
@@ -162,7 +165,7 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnAjObs_Click(object sender, EventArgs e)
+        private async void BtnAjObs_Click(object sender, EventArgs e)
         {
             Observateur observateur = new Observateur();
             try
@@ -170,7 +173,7 @@ namespace HumidityDesktop
                 observateur.NomPrenomObservateur = textBoxNomObs.Text;
                 observateur.StationId = Convert.ToInt32(textBoxCodeStat.Text);
                 db.Observateurs.Add(observateur);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
             }
@@ -183,14 +186,14 @@ namespace HumidityDesktop
             RemplireLesGrid();
         }
 
-        private void BtnSObs_Click(object sender, EventArgs e)
+        private async void BtnSObs_Click(object sender, EventArgs e)
         {
             if (textBoxCodeObs.Text != null && textBoxCodeObs.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeObs.Text);
                 Observateur observateur = db.Observateurs.SingleOrDefault(ob => ob.ObservateurId == id);
                 db.Observateurs.Remove(observateur);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -203,14 +206,14 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnMObs_Click(object sender, EventArgs e)
+        private async void BtnMObs_Click(object sender, EventArgs e)
         {
             if (textBoxCodeObs.Text != null && textBoxCodeObs.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeObs.Text);
                 Observateur observateur = db.Observateurs.SingleOrDefault(ob => ob.ObservateurId == id);
                 observateur.NomPrenomObservateur = textBoxNomObs.Text;
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -237,7 +240,7 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnAStat_Click(object sender, EventArgs e)
+        private async void BtnAStat_Click(object sender, EventArgs e)
         {
             Station station = new Station();
             try
@@ -245,7 +248,7 @@ namespace HumidityDesktop
                 station.NomStation = textBoxNomStat.Text;
                 station.BassinId = Convert.ToInt32(textBoxCodeBas.Text);
                 db.Stations.Add(station);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
             }
@@ -258,14 +261,14 @@ namespace HumidityDesktop
             RemplireLesGrid();
         }
 
-        private void BtnMStat_Click(object sender, EventArgs e)
+        private async void BtnMStat_Click(object sender, EventArgs e)
         {
             if (textBoxCodeStat.Text != null && textBoxCodeStat.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeStat.Text);
                 Station station = db.Stations.SingleOrDefault(st => st.StationId == id);
                 station.NomStation = textBoxNomStat.Text;
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -275,14 +278,14 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnSuprStat_Click(object sender, EventArgs e)
+        private async void BtnSuprStat_Click(object sender, EventArgs e)
         {
             if (textBoxCodeStat.Text != null && textBoxCodeStat.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeStat.Text);
                 Station station = db.Stations.SingleOrDefault(st => st.StationId == id);
                 db.Stations.Remove(station);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -310,15 +313,15 @@ namespace HumidityDesktop
                 }
             }
         }
-        
-        private void BtnAjB_Click(object sender, EventArgs e)
+
+        private async void BtnAjB_Click(object sender, EventArgs e)
         {
             Bassin bassin = new Bassin();
             try
             {
                 bassin.NomBassin = textBoxNomBas.Text;
                 db.Bassins.Add(bassin);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
             }
@@ -329,14 +332,14 @@ namespace HumidityDesktop
             RemplireLesGrid();
         }
 
-        private void BtnMB_Click(object sender, EventArgs e)
+        private async void BtnMB_Click(object sender, EventArgs e)
         {
             if (textBoxCodeBas.Text != null && textBoxCodeBas.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeBas.Text);
                 Bassin bassin = db.Bassins.SingleOrDefault(bs => bs.BassinId == id);
                 bassin.NomBassin = textBoxNomBas.Text;
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -347,14 +350,14 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnSB_Click(object sender, EventArgs e)
+        private async void BtnSB_Click(object sender, EventArgs e)
         {
             if (textBoxCodeBas.Text != null && textBoxCodeBas.Text.Length > 0)
             {
                 int id = Convert.ToInt32(textBoxCodeBas.Text);
                 Bassin bassin = db.Bassins.SingleOrDefault(bs => bs.BassinId == id);
                 db.Bassins.Remove(bassin);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 RemplireLesGrid();
                 SuccesMsg S = new SuccesMsg();
                 S.Show();
@@ -383,7 +386,7 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnAjouter_Click(object sender, EventArgs e)
+        private async void BtnAjouter_Click(object sender, EventArgs e)
         {
             RelativeHumidity humidity = new RelativeHumidity();
             try
@@ -403,7 +406,7 @@ namespace HumidityDesktop
                     humidity.ObservateurId = Convert.ToInt32(comboBoxObs.SelectedItem.ToString().Split(' ')[0]);
                     humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
                     db.RelativeHumidities.Add(humidity);
-                    db.SaveChanges();
+                    await db.SaveChangesAsync();
                     RemplireLesGrid();
                     SuccesMsg S = new SuccesMsg();
                     S.Show();
@@ -441,7 +444,7 @@ namespace HumidityDesktop
             }
         }
 
-        private void BtnModifier_Click(object sender, EventArgs e)
+        private async void BtnModifier_Click(object sender, EventArgs e)
         {
             if (txtID.Text == null || txtID.Text.Length <= 0)
             {
@@ -468,7 +471,7 @@ namespace HumidityDesktop
                         humidity.ThermometreMI = txtMi.Text.Length <= 0 ? 0 : (float)Convert.ToDouble(txtMi.Text);
                         humidity.ObservateurId = Convert.ToInt32(comboBoxObs.SelectedItem.ToString().Split(' ')[0]);
                         humidity.StationId = Convert.ToInt32(comboBoxStat.SelectedItem.ToString().Split(' ')[0]);
-                        db.SaveChanges();
+                        await db.SaveChangesAsync();
                         RemplireLesGrid();
                         SuccesMsg S = new SuccesMsg();
                         S.Show();
@@ -609,11 +612,14 @@ namespace HumidityDesktop
                     xcelApp.Columns.AutoFit();
                     xcelApp.Visible = true;
                 }
-
+                else
+                {
+                    MessageBox.Show("Il n'y a pas d'enregistrements dans cette station","Information", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
             }
         }
 
-        private void BtnSupprimer_Click(object sender, EventArgs e)
+        private async void BtnSupprimer_Click(object sender, EventArgs e)
         {
             if (txtID.Text == null || txtID.Text.Length <= 0)
             {
@@ -628,7 +634,7 @@ namespace HumidityDesktop
                 try
                 {
                     db.RelativeHumidities.Remove(humidity);
-                    db.SaveChanges();
+                    await db.SaveChangesAsync();
                     RemplireLesGrid();
                     SuccesMsg S = new SuccesMsg();
                     S.Show();

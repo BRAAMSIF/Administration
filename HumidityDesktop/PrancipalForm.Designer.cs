@@ -642,10 +642,10 @@ namespace HumidityDesktop
             this.bunifuPages1.Multiline = true;
             this.bunifuPages1.Name = "bunifuPages1";
             this.bunifuPages1.Padding = new System.Drawing.Point(0, 0);
-            this.bunifuPages1.Page = this.tabPage1;
-            this.bunifuPages1.PageIndex = 0;
-            this.bunifuPages1.PageName = "tabPage1";
-            this.bunifuPages1.PageTitle = "Tableau";
+            this.bunifuPages1.Page = this.tabPage2;
+            this.bunifuPages1.PageIndex = 1;
+            this.bunifuPages1.PageName = "tabPage2";
+            this.bunifuPages1.PageTitle = "Humidite";
             this.bunifuPages1.SelectedIndex = 0;
             this.bunifuPages1.Size = new System.Drawing.Size(837, 557);
             this.bunifuPages1.TabIndex = 1;
@@ -2771,7 +2771,7 @@ namespace HumidityDesktop
             "18",
             "21",
             "7"});
-            this.comboBoxHeur.Location = new System.Drawing.Point(322, 157);
+            this.comboBoxHeur.Location = new System.Drawing.Point(322, 156);
             this.comboBoxHeur.Name = "comboBoxHeur";
             this.comboBoxHeur.Size = new System.Drawing.Size(94, 31);
             this.comboBoxHeur.Sorted = true;
@@ -3113,13 +3113,13 @@ namespace HumidityDesktop
             this.comboBoxStat.BackColor = System.Drawing.Color.White;
             this.comboBoxStat.DropDownHeight = 150;
             this.comboBoxStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxStat.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBoxStat.ForeColor = System.Drawing.Color.White;
+            this.comboBoxStat.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.comboBoxStat.ForeColor = System.Drawing.Color.Black;
             this.comboBoxStat.FormattingEnabled = true;
             this.comboBoxStat.IntegralHeight = false;
-            this.comboBoxStat.Location = new System.Drawing.Point(442, 71);
+            this.comboBoxStat.Location = new System.Drawing.Point(442, 70);
             this.comboBoxStat.Name = "comboBoxStat";
-            this.comboBoxStat.Size = new System.Drawing.Size(160, 25);
+            this.comboBoxStat.Size = new System.Drawing.Size(160, 31);
             this.comboBoxStat.Sorted = true;
             this.comboBoxStat.TabIndex = 12;
             // 
@@ -3127,12 +3127,12 @@ namespace HumidityDesktop
             // 
             this.comboBoxObs.DropDownHeight = 150;
             this.comboBoxObs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxObs.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxObs.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.comboBoxObs.FormattingEnabled = true;
             this.comboBoxObs.IntegralHeight = false;
-            this.comboBoxObs.Location = new System.Drawing.Point(608, 71);
+            this.comboBoxObs.Location = new System.Drawing.Point(608, 70);
             this.comboBoxObs.Name = "comboBoxObs";
-            this.comboBoxObs.Size = new System.Drawing.Size(160, 25);
+            this.comboBoxObs.Size = new System.Drawing.Size(160, 31);
             this.comboBoxObs.Sorted = true;
             this.comboBoxObs.TabIndex = 9;
             // 
